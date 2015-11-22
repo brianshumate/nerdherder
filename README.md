@@ -5,8 +5,8 @@
 /_/|_/\__/_/  \_,_/_//_/\__/_/  \_,_/\__/_/
 ```
 
-This is NerdHerder, a little toy project that searches GitHub by location,
-and builds a static website containing all the found nerds.
+This is NerdHerder, a little toy project that searches GitHub users by
+location, and builds a static website containing all the found nerds.
 
 ## Prerequisites
 
@@ -41,3 +41,7 @@ page here: http://boone-nerds.brianshumate.com/
 ## Bugs
 
 Yes.
+
+## Thanks
+
+* [Brent Woodruff](https://github.com/fprimex) for the name idea
