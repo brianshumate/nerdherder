@@ -10,8 +10,8 @@ location, and builds a static website containing all the found nerds.
 
 ## Prerequisites
 
-This fancy software uses some ES6 features so you should have Node.js
-version 4 or higher, otherwise it will not function properly. It could be
+This software uses some ES6 features so you should have Node.js version 4 
+or higher, otherwise it will not function properly. It could be
 more backwards compatible, but we're not going backwards in time  ¯\_(ツ)_/¯.
 
 ## Installation
@@ -31,7 +31,7 @@ npm link
 Simple usage example:
 
 ```
-nerdherder <GitHub_API_key> Boone
+nerdherder <GitHub_API_token> Boone
 ```
 
 This will herd nerds, build a static website in the `./build` directory and
