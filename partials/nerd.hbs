@@ -1,0 +1,19 @@
+<div class="box col3">
+    <div class="thumbnail">
+        <img class="img-rounded" src="{{ avatar }}">
+        <div class="caption">
+            <h3>{{ name }}</h3>
+            <ul>
+                <li>GitHub user: <span class="gh-user">{{ gh_user }}</span></li>
+                <li>Company: {{ company }}</li>
+                <li>For hire: {{ for_hire }}</li>
+                <li>Repositories: {{ repo_count }}</li>
+                <li>Followers: {{ follower_count }}</li>
+            </ul>
+            <p class="text-center">
+                <a href="{{ email_url }}" class="{{ email_button_class }}" role="button">Email</a>
+                <a href="{{ website_url }}" class="{{ web_button_class }}" role="button">Website</a>
+            </p>
+        </div>
+    </div>
+</div>

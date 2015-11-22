@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NerdHerder</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href="styles/foundation.min.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="topbar" class="row">
+        <div class="large-6 columns">
+            <h1>NerdHerder</h1>
+        </div>
+        <div class="large-6 columns">
+            <br/>
+            {{> location}}
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <section id="main-content">
+            <div class="row">
+                <div id="container" class="large-12 columns transitions-enabled large-centered clearfix">
+                    <!-- nerds go here -->
+                    {{> allnerds}}
+                    <!--/nerds -->
+                </div>
+                <!--/container -->
+            </div>
+        </section>
+        <div class="page-footer-bottom">
+            <div class="row">
+                <div class="medium-8 medium-8 push-4 columns">
+                    <ul class="site-links">
+                        <li class="name">
+                            <a href="https://github.com/brianshumate/nerdherder">NerdHerder is an open source project</a>
+                        </li>
+                    </ul>
+                    <p class="copyright">Made with <span class="heart">♥</span> in North Carolina by <a href="https://github.com/brianshumate">Brian Shumate</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/foundation.min.js"></script>
+    <script>
+    $('.gh-user').each(function () { $(this).html('<a href="https://github.com/' + $(this).text() + '">' + $(this).text() + '</a>')
+    });
+    </script
+    <script>
+    $(document).foundation();
+    </script>
+    <script src="scripts/jquery.masonry.js"></script>
+    <script>
+    var $containter = $('#container');
+    $containter.imagesLoaded(function() {
+        $containter.masonry({
+            itemSelector: '.box',
+            //isAnimated: !Modernizr.csstransitions,
+            isFitWidth: true
+        });
+    });
+    </script>
+</body>
+
+</html>
