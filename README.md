@@ -35,8 +35,12 @@ nerdherder <GitHub_API_token> Boone
 ```
 
 This will herd nerds, build a static website in the `./build` directory and
-start an HTTP server on port *8080*. Check out an example of the resulting
-page here: http://boone-nerds.brianshumate.com/
+start an HTTP server on port *8080*. Example output:
+
+![](https://raw.githubusercontent.com/brianshumate/nerdherder/master/share/screen-shot.png)
+
+Check out a live example of the resulting page here: 
+http://boone-nerds.brianshumate.com/
 
 ## Bugs
 
