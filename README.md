@@ -12,7 +12,8 @@ location, and builds a static website containing all the found nerds.
 
 This software uses some ES6 features so you should have Node.js version 4 
 or higher, otherwise it will not function properly. It could be
-more backwards compatible, but we're not going backwards in time  ¯\_(ツ)_/¯.
+more backwards compatible, but we're not going backwards in time 
+¯\_(ツ)_/¯.
 
 ## Installation
 
