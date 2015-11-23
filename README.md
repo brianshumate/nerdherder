@@ -32,7 +32,7 @@ npm link
 Simple usage example:
 
 ```
-nerdherder <GitHub_API_token> Boone
+nerdherder <GitHub_API_token> 'Boone, NC'
 ```
 
 This will herd nerds, build a static website in the `./build` directory and
