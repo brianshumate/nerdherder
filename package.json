@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Herd and display nerds from a given location",
   "bin": {
-    "nerdherder": "index.js"
+    "nerdherder": "build.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
