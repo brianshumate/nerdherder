@@ -61,7 +61,7 @@ async.series([
             const locationHeader = '<h2 class="text-right">Herding ' + wantUsers + ' nerds in ' + location + '</h2>'
             const locationTemplatePath = 'partials/location.hbs'
             fs.writeFile(locationTemplatePath, locationHeader, function (err) {
-              if (err) throw err
+              if (err) console.error(chalk.red(err))
             })
           }
           // console.log(chalk.white('INFO: got page ' + pageNumber))
@@ -93,7 +93,7 @@ async.series([
         per_page: 100
       }, function (err, result) {
         if (err) {
-          throw err
+          console.error(chalk.red(err))
         }
         if (result) {
           var fullName = result.name
@@ -123,7 +123,7 @@ async.series([
           var nerd = ''
           nerd = '{{> nerd gh_user="' + ghUser + '" name="' + fullName + '" avatar="' + avatarURL + '" company="' + companyName + '" for_hire="' + canHire + '" repo_count="' + repoCount + '" follower_count="' + followerCount + '" email_url="' + emailAddress + '" website_url="' + blogURL + '" email_button_class="' + emailButton + '" web_button_class="' + webButton + '" }}\n'
           fs.appendFile(nerdsTemplatePath, nerd, function (err) {
-            if (err) throw err
+            if (err) console.error(chalk.red(err))
             // console.log(chalk.white('INFO: Writing user ' + ghUser))
             bar.tick()
           })
@@ -169,7 +169,7 @@ async.series([
   }
 ], function (err) {
   if (err) {
-    throw err
+    console.error(chalk.red(err))
   }
   process.exit(0)
 })
