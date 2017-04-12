@@ -1,6 +1,6 @@
 {
   "name": "nerdherder",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Herd and display nerds from a given location",
   "bin": {
     "nerdherder": "build.js"

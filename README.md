@@ -32,20 +32,23 @@ npm link
 Simple usage example:
 
 ```
-nerdherder <GitHub_API_token> 'Boone, NC'
+nerdherder <GitHub_personal_token> 'Boone, NC'
 ```
 
 This will herd nerds, build a static website in the `./build` directory and
-start an HTTP server on port *8080*. Example output:
+start an HTTP server on port *8080*.
+
+Example output in browser:
 
 ![](https://raw.githubusercontent.com/brianshumate/nerdherder/master/share/screen-shot.png)
 
-Check out a live example of the resulting page here: 
+Check out a live demo of the resulting page here:
+
 http://boone-nerds.brianshumate.com/
 
 ## Bugs
 
-Yes.
+Yes
 
 ## Thanks
 

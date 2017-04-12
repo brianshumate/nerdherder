@@ -64,7 +64,6 @@ async.series([
               if (err) console.error(chalk.red(err))
             })
           }
-          // console.log(chalk.white('INFO: got page ' + pageNumber))
           pageNumber += 1
           return nextPage(null)
         })
@@ -77,7 +76,6 @@ async.series([
     fs.remove(nerdsTemplatePath, function (err) {
       if (err) return console.error(chalk.red('ERROR: ' + err))
     })
-    // console.log(chalk.white('Number of users: ' + users.length))
     var bar = new ProgressBar('Herding nerds [:bar] :percent', {
       complete: '=',
       incomplete: ' ',
@@ -124,7 +122,6 @@ async.series([
           nerd = '{{> nerd gh_user="' + ghUser + '" name="' + fullName + '" avatar="' + avatarURL + '" company="' + companyName + '" for_hire="' + canHire + '" repo_count="' + repoCount + '" follower_count="' + followerCount + '" email_url="' + emailAddress + '" website_url="' + blogURL + '" email_button_class="' + emailButton + '" web_button_class="' + webButton + '" }}\n'
           fs.appendFile(nerdsTemplatePath, nerd, function (err) {
             if (err) console.error(chalk.red(err))
-            // console.log(chalk.white('INFO: Writing user ' + ghUser))
             bar.tick()
           })
         }
